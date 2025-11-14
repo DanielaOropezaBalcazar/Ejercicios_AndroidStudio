@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5D5D64"
+    android:padding="30sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginTop="20sp"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNumero1"
+            android:hint="Primer número"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:weightSum="1"
+            android:textColor="#ffffff"
+
+            />
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNumero2"
+            android:hint="Segundo número"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:weightSum="1"
+            />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="9"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="25sp"
+            android:backgroundTint="#045F04"
+            android:id="@+id/btSuma"
+            android:weightSum="1"
+        />
+        <Space
+            android:layout_width="5sp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            />
+
+        <Button
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="25sp"
+            android:backgroundTint="#009688"
+            android:id="@+id/btResta"
+            android:weightSum="1"
+        />
+        <Space
+        android:layout_width="5sp"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        />
+
+        <Button
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="x"
+            android:textSize="25sp"
+            android:backgroundTint="#045F04"
+            android:id="@+id/btProducto"
+            android:weightSum="1"
+        />
+        <Space
+            android:layout_width="5sp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            />
+
+        <Button
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="25sp"
+            android:backgroundTint="#009688"
+            android:id="@+id/btDivision"
+            android:weightSum="1"
+        />
+        <Space
+            android:layout_width="5sp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            />
+
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:text="CL"
+            android:textSize="25sp"
+            android:backgroundTint="#FF5722"
+            android:id="@+id/btNuevo"
+            android:weightSum="1"
+        />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:background="#79A93C"
+        android:padding="20sp"
+        android:id="@+id/tvResultado"
+        android:textColor="#ffffff"
+    />
+
+</LinearLayout>
+
+
