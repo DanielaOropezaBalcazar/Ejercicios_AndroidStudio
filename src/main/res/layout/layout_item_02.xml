@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_centerInParent="true"
+
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitulo"
+            android:text="Titulo"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_above="@+id/ivFoto"
+
+
+            />
+
+        <ImageView
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:id="@+id/ivFoto"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_centerInParent="true"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDetalle"
+            android:text="Esta es una descripcion con fines academicos"
+            android:textSize="18sp"
+            android:layout_below="@+id/ivFoto"
+
+            />
+
+
+</RelativeLayout>
