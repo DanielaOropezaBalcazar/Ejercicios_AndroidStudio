@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomModeActivity"
+    android:background="#E3EFF5"
+
+    >
+
+    <!-- Contenedor de fichas -->
+    <LinearLayout
+        android:id="@+id/containerBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        >
+        <!-- Cronometro -->
+        <TextView
+            android:id="@+id/tvCronometro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_margin="20sp"
+            android:layout_gravity="center"
+            />
+
+        <!-- Fila 1 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivA"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#193cb8"/>
+
+            <ImageView
+                android:id="@+id/ivB"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#155dfc"/>
+
+            <ImageView
+                android:id="@+id/ivC"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#51A2FF"
+                />
+
+        </LinearLayout>
+
+        <!-- Fila 2 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivD"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#6E11B0"/>
+
+            <ImageView
+                android:id="@+id/ivE"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#9810fa"/>
+
+            <ImageView
+                android:id="@+id/ivF"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#AD7AFF"/>
+
+        </LinearLayout>
+
+        <!-- Fila 3 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/ivG"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#8a0194"/>
+
+            <ImageView
+            android:id="@+id/ivH"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="8"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#BD00DE"/>
+
+            <ImageView
+                android:id="@+id/ivX"
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_margin="2sp"
+                android:background="#E8E6E6"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:id="@+id/containerButtons"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/containerBoard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btMezclar"
+                android:layout_width="140sp"
+                android:layout_height="60sp"
+                android:text="Mezclar"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="#0C8575"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/btCargarImagen"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:text="Cargar Imagen"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="#D7761A"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+            >
+
+            <Button
+                android:id="@+id/btOrdenar"
+                android:layout_width="140sp"
+                android:layout_height="60sp"
+                android:text="Ordenar"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="#1E32E9"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"
+
+                />
+
+            <Button
+                android:id="@+id/btVolverMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:text="Salir al Menu"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:backgroundTint="#E41F6E"
+                android:layout_margin="5sp"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivReferencia"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:background="#9CFF5D5D"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
