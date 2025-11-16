@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_alemania"
+        android:id="@+id/tvUno"
+        android:text="A"
+        android:textSize="40sp"
+        android:layout_margin="30sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_bolivia"
+        android:id="@+id/tvDos"
+        android:text="B"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/tvUno"
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_colombia"
+        android:id="@+id/tvTres"
+        android:text="C"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/tvUno"
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="#9527AE"
+        android:id="@+id/tvCuatro"
+        android:text="D"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/tvUno"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_estonia"
+        android:id="@+id/tvCinco"
+        android:text="E"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/tvUno"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_francia"
+        android:id="@+id/tvSeis"
+        android:text="F"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/tvUno"
+        android:layout_above="@id/tvUno"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_groenlandia"
+        android:id="@+id/tvSiete"
+        android:text="G"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tvUno"
+        android:layout_above="@id/tvUno"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_hungria"
+        android:id="@+id/tvOcho"
+        android:text="H"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_toLeftOf="@id/tvUno"
+        android:layout_below="@id/tvUno"
+
+        />
+
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:background="@drawable/boton_redondo_italia"
+        android:id="@+id/tvNueve"
+        android:text="I"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_toRightOf="@id/tvUno"
+        android:layout_below="@id/tvUno"
+
+        />
+
+
+</RelativeLayout>
